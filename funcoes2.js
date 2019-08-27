@@ -145,3 +145,41 @@ function ex6(){
         }
     document.getElementById("saida6").innerHTML = "O resultado é " + resultado
 }
+
+function ex22(){
+    var n17 = Number(document.getElementById("n17").value);
+    var n18 = Number(document.getElementById("n18").value);
+
+    var risco;
+    if (n17 < 20){
+        if (n18 <60){
+            risco = 9;
+        }
+        else if ((n18>=60) && (n18<=90)){
+                risco = 8;
+        }
+                else
+                risco = 7;
+    }
+    else if ((n17 >= 20) && (n17 <=50)){
+            if (n18<60){
+                risco = 6;
+            }
+            else if ((n18>=60) && (n18<=90)){
+                        risco = 5;
+                    }
+                    else 
+                        risco = 4;
+            }
+        else
+            if (n18<60){
+                    risco = 3;
+            }
+            else if ((n18>=60) && (n18<=90)){
+                            risco = 2;
+                 }
+                 else
+                    risco = 1;
+            
+    document.getElementById("saida22").innerHTML = "O risco sera: " + risco
+}
